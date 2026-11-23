@@ -21,6 +21,7 @@ jobs:
       - name: Install elan and Lean 4.33.1
         run: |
           curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain leanprover/lean4:v4.33.1
+          "$HOME/.elan/bin/elan" toolchain install leanprover/lean4:v4.33.1
           LEAN_BIN="$HOME/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean"
           "$LEAN_BIN" --version | grep -E '^Lean \(version 4\.33\.1(,|\))'
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
