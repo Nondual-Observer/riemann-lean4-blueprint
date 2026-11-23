@@ -1,0 +1,80 @@
+% Academic arXiv-grade XeLaTeX/Tectonic preamble for BLUEPRINT_EN.pdf & BLUEPRINT_RU.pdf
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+
+\definecolor{boxbg}{HTML}{F7F8FA}
+\definecolor{boxframe}{HTML}{B8C0CC}
+\definecolor{mapbg}{HTML}{FBFBFC}
+\definecolor{linknavy}{HTML}{1A4B8C}
+
+\AtEndPreamble{%
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=linknavy,
+    urlcolor=linknavy,
+    citecolor=linknavy,
+    pdfauthor={Igor M. Zhuk}
+  }%
+  \pdfstringdefDisableCommands{%
+    \def\zeta{zeta}%
+    \def\chi{chi}%
+    \def\times{x}%
+  }%
+}
+\AtBeginDocument{%
+  % unicode-math maps \setminus to U+29F5, missing in latinmodern-math; map to U+2216 (standard set minus)
+  \renewcommand{\setminus}{\mathbin{\char"2216}}%
+}
+
+% Clean running headers and page numbers for comfortable reading on paper
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape\nouppercase{\leftmark}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Subtle framed box for Scope Box, Main Theorem, and Hypercube Theorem
+\OuterFrameSep=4pt
+\FrameSep=8pt
+\FrameRule=0.5pt
+\renewenvironment{quote}{%
+  \def\FrameCommand{\fboxsep=\FrameSep \fcolorbox{boxframe}{boxbg}}%
+  \MakeFramed{\advance\hsize-\width \FrameRestore}%
+  \small\ignorespaces
+}{%
+  \endMakeFramed
+}
+
+\newenvironment{proofmapbox}{%
+  \def\FrameCommand{\fboxsep=6pt \fcolorbox{boxframe}{mapbg}}%
+  \MakeFramed{\advance\hsize-\width \FrameRestore}%
+}{%
+  \endMakeFramed
+}
+
+% Inline Lean 4 code macro with soft line-break allowance
+\newcommand{\leancode}[1]{{\small\ttfamily #1}}
+
+% Comfortable spacing for lists, equations, and section headings
+\setlist[itemize]{topsep=3pt,itemsep=2pt,parsep=1pt,leftmargin=1.4em}
+\setlist[enumerate]{topsep=3pt,itemsep=3pt,parsep=1pt,leftmargin=1.6em}
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2.5em}
+\allowdisplaybreaks
+
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0pt}{11pt plus 3pt minus 2pt}{4pt}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titlespacing*{\subsection}{0pt}{8pt plus 2pt minus 2pt}{3pt}

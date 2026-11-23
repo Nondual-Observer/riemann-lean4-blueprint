@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this mathematical blueprint, Lean 4 kernel index, standalone Lean 4 module, or Julia verification suite, please cite this work using the metadata below. Software release 1.0.0 accompanies blueprint edition 9.0. Code is licensed under Apache-2.0 and documentation under CC BY 4.0."
+type: software
+title: "The Riemann Hypothesis in Lean 4: Human Mathematical Blueprint, 240-Entry Kernel Index, and DOT Structural Companion (for L. Alpöge and Claude, 2026)"
+authors:
+  - family-names: "Zhuk"
+    given-names: "Igor M."
+    orcid: "https://orcid.org/0009-0003-1670-8388"
+version: "1.0.0"
+date-released: "2026-11-23"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24459321"
+    description: "Zenodo preprint DOI for Blueprint Edition 9.0 (EN and RU print PDFs)"
+  - type: doi
+    value: "10.5281/zenodo.24459320"
+    description: "Zenodo Concept DOI for all Blueprint preprint editions"
+url: "https://github.com/Nondual-Observer/riemann-lean4-blueprint"
+repository-code: "https://github.com/Nondual-Observer/riemann-lean4-blueprint"
+license: "Apache-2.0"
+keywords:
+  - "Riemann Hypothesis"
+  - "Generalized Riemann Hypothesis"
+  - "Lean 4"
+  - "mathematical blueprint"
+  - "kernel verification"
+  - "theta correspondence"
+  - "Chowla-Selberg formula"
+  - "Clifford algebra"
+  - "hypercube projectors"
+  - "Distinction Observable Theory"
+  - "DOT"
+references:
+  - type: report
+    title: "[Author's note accompanying the Lean proof archive]"
+    authors:
+      - family-names: "Alpöge"
+        given-names: "Levent"
+    year: 2026
+    url: "https://alpo.ge/remark.pdf"
+  - type: generic
+    title: "Verification files for the Lean proof of the Riemann Hypothesis"
+    authors:
+      - family-names: "Sutherland"
+        given-names: "Andrew V."
+    year: 2026
+    url: "https://math.mit.edu/~drew/grh/"
+  - type: software
+    title: "DOT: Distinction Observable Theory"
+    authors:
+      - family-names: "Zhuk"
+        given-names: "Igor M."
+        orcid: "https://orcid.org/0009-0003-1670-8388"
+    url: "https://github.com/Nondual-Observer/DOTheory"
+    repository-code: "https://github.com/Nondual-Observer/DOTheory"

@@ -1,0 +1,8 @@
+# Documentation License (CC BY 4.0)
+
+All textual documentation and diagrams in this repository (the mathematical blueprints `blueprint/BLUEPRINT_EN.md`, `blueprint/BLUEPRINT_RU.md`, standalone one-page proofs `blueprint/ONE_PAGE_PROOF_EN.md`, `blueprint/ONE_PAGE_PROOF_RU.md`, their typeset PDF editions in `blueprint/*.pdf`, vector diagrams and graphics in `assets/`, the kernel declaration indices `blueprint/KERNEL_INDEX_EN.md`, `blueprint/KERNEL_INDEX_RU.md`, the verification and comparative audit logs `verification/AUDIT_HISTORY_EN.md`, `verification/AUDIT_HISTORY_RU.md`, `verification/COMPARISON_8_REPOS_EN.md`, `verification/COMPARISON_8_REPOS_RU.md`, overview files `README.md`, `README_RU.md`, and referee prompts `prompts/AI_REFEREE_PROMPT_EN.md`, `prompts/AI_REFEREE_PROMPT_RU.md`) are licensed under the **Creative Commons Attribution 4.0 International License (`CC BY 4.0`)**.
+
+- **Author of the blueprint, index, and documentation:** Igor M. Zhuk (`ORCID: 0009-0003-1670-8388`).
+- **Full license text:** https://creativecommons.org/licenses/by/4.0/legalcode.en
+- Source code in `Lean 4` (`lean/HypercubeAndLPTheorems.lean`), `Julia` (`verification/verify_blueprint.jl`, `verification/build_kernel_reachability_tsv.jl`), and `Python` / `Lua` / `TeX` build tooling (`scripts/`) is licensed under the **Apache License 2.0** (see [`LICENSE`](LICENSE)).
+- The underlying formal proof of the Riemann Hypothesis and Generalized Riemann Hypothesis in `Lean 4` (`175,187` modules) is the work of Levent Alpöge and Claude (2026; see https://alpo.ge/remark.pdf) and is not copied into this repository.

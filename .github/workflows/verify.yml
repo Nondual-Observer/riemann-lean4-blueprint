@@ -1,0 +1,57 @@
+name: Verify Blueprint & Lean 4 Theorems
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Lean 4.33.1 (0 imports, 0 sorry) + Julia Stdlib Gates (EN & RU)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify SHA-256 manifest
+        run: sha256sum -c SHA256SUMS.txt
+
+      - name: Install elan and Lean 4.33.1
+        run: |
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y --default-toolchain leanprover/lean4:v4.33.1
+          LEAN_BIN="$HOME/.elan/toolchains/leanprover--lean4---v4.33.1/bin/lean"
+          "$LEAN_BIN" --version | grep -E '^Lean \(version 4\.33\.1(,|\))'
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "RH_LEAN_BIN=$LEAN_BIN" >> "$GITHUB_ENV"
+
+      - name: Compile standalone Lean 4.33.1 module (44/44 theorems, 0 sorry)
+        run: |
+          "$RH_LEAN_BIN" -j1 lean/HypercubeAndLPTheorems.lean
+
+      - name: Setup Julia 1.12
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.12'
+
+      - name: Self-test standalone NDJSON reachability builder
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          JULIA_NUM_THREADS: "1"
+          JULIA_LOAD_PATH: "@stdlib"
+        run: julia --startup-file=no -t1 verification/build_kernel_reachability_tsv.jl --self-test
+
+      - name: Run adversarial Self-Gate (31/31 traps + live Lean 4.33.1)
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          JULIA_NUM_THREADS: "1"
+          JULIA_LOAD_PATH: "@stdlib"
+        run: julia --startup-file=no -t1 verification/verify_blueprint.jl --self-gate
+
+      - name: Run Portable Verification Suite (5/5 gates, bilingual EN+RU + Lean 4 axiom audit)
+        env:
+          OPENBLAS_NUM_THREADS: "1"
+          JULIA_NUM_THREADS: "1"
+          JULIA_LOAD_PATH: "@stdlib"
+        run: julia --startup-file=no -t1 verification/verify_blueprint.jl --portable
