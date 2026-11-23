@@ -1,7 +1,7 @@
 # Multi-Round Verification Record for the Blueprint, Kernel Index, and Standalone `Lean 4.33.1` Module
 
 **Release Date:** November 23, 2026 · **Blueprint Edition:** `v9.0`  
-**Author of Blueprint, Index, and Companion Code:** Igor M. Zhuk (`ORCID: 0009-0003-1670-8388`)
+**Author of Blueprint, Index, and Companion Code:** Igor M. Zhuk (`ORCID: 0009-0003-1670-8388`), prepared in collaboration with AI systems (Gemini and OpenAI Codex)
 
 ---
 

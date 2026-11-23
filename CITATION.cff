@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this mathematical blueprint, Lean 4 kernel index, standalone Lean 4 module, or Julia verification suite, please cite this work using the metadata below. Software release 1.0.0 accompanies blueprint edition 9.0. Code is licensed under Apache-2.0 and documentation under CC BY 4.0."
+message: "If you use this mathematical blueprint, Lean 4 kernel index, standalone Lean 4 module, or Julia verification suite, please cite this work using the metadata below. Prepared by Igor M. Zhuk in collaboration with AI systems (Gemini and OpenAI Codex). Software release 1.0.0 accompanies blueprint edition 9.0. Code is licensed under Apache-2.0 and documentation under CC BY 4.0."
 type: software
 title: "The Riemann Hypothesis in Lean 4: Human Mathematical Blueprint, 240-Entry Kernel Index, and DOT Structural Companion (for L. Alpöge and Claude, 2026)"
 authors:
@@ -10,11 +10,14 @@ version: "1.0.0"
 date-released: "2026-11-23"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.24459321"
-    description: "Zenodo preprint DOI for Blueprint Edition 9.0 (EN and RU print PDFs)"
+    value: "10.5281/zenodo.24459582"
+    description: "Zenodo DOI for Software Release v1.0.0"
   - type: doi
     value: "10.5281/zenodo.24459320"
-    description: "Zenodo Concept DOI for all Blueprint preprint editions"
+    description: "Zenodo Concept DOI for all Blueprint preprint editions (EN and RU print PDFs)"
+  - type: doi
+    value: "10.5281/zenodo.24459946"
+    description: "Zenodo DOI for Blueprint preprint v9.0.1 (EN and RU print PDFs)"
 url: "https://github.com/Nondual-Observer/riemann-lean4-blueprint"
 repository-code: "https://github.com/Nondual-Observer/riemann-lean4-blueprint"
 license: "Apache-2.0"
