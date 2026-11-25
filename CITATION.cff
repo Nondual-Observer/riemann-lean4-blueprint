@@ -9,6 +9,9 @@ authors:
 version: "1.0.0"
 date-released: "2026-11-23"
 identifiers:
+  - type: url
+    value: "https://hexagonmath.org/abs/2611.01031v1"
+    description: "Hexagon preprint hexagon:2611.01031v1 (25-page classical LaTeX blueprint)"
   - type: doi
     value: "10.5281/zenodo.24459582"
     description: "Zenodo DOI for Software Release v1.0.0"

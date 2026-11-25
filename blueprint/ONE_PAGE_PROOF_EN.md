@@ -1,6 +1,6 @@
 # The Riemann Hypothesis on One Page
 
-**Edition 9.0 · Proof outline**
+**Edition 9.0 · Proof outline** · [Hexagon preprint 2611.01031v1](https://hexagonmath.org/abs/2611.01031v1) ([PDF](https://hexagonmath.org/pdf/2611.01031v1)) · [Zenodo DOI 10.5281/zenodo.24459320](https://doi.org/10.5281/zenodo.24459320)
 
 **Theorem (Riemann Hypothesis and Dirichlet $L$-Functions).** *For every integer $N \ge 1$ and every Dirichlet character $\chi \bmod N$, one has $L(s, \chi) \ne 0$ throughout $\Re s > 1/2$ (for $\chi \ne 1$ or $s \ne 1$), and every zero of $L(s, \chi)$ in $0 < \Re s < 1$ satisfies $\Re s = 1/2$. In particular, every non-trivial zero of $\zeta(s)$ lies on the critical line $\Re s = 1/2$.* *[Lean: `Main.lean:4–12`, `Statements.lean:3–16`]*
 

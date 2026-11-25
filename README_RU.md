@@ -1,6 +1,7 @@
 # Гипотеза Римана в Lean 4
 
 [![Verify Blueprint & Lean 4](https://github.com/Nondual-Observer/riemann-lean4-blueprint/actions/workflows/verify.yml/badge.svg)](https://github.com/Nondual-Observer/riemann-lean4-blueprint/actions/workflows/verify.yml)
+[![Hexagon math.NT](https://img.shields.io/badge/Hexagon-2611.01031-2ea44f.svg)](https://hexagonmath.org/abs/2611.01031v1)
 [![DOI препринта](https://zenodo.org/badge/DOI/10.5281/zenodo.24459320.svg)](https://doi.org/10.5281/zenodo.24459320)
 [![DOI выпуска кода](https://zenodo.org/badge/DOI/10.5281/zenodo.24459582.svg)](https://doi.org/10.5281/zenodo.24459582)
 [![Lean 4.33.1](https://img.shields.io/badge/Lean-4.33.1%20(0%20imports%2C%200%20sorry)-blue.svg)](lean/HypercubeAndLPTheorems.lean)
@@ -8,7 +9,7 @@
 [![Code License: Apache-2.0](https://img.shields.io/badge/Code-Apache--2.0-yellow.svg)](LICENSE)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS.md)
 
-**[English version (README.md)](README.md)** · **[Доказательство на 1 странице PDF (`ONE_PAGE_PROOF_RU.pdf`)](blueprint/ONE_PAGE_PROOF_RU.pdf)** · **[На 1 странице (`ONE_PAGE_PROOF_RU.md`)](blueprint/ONE_PAGE_PROOF_RU.md)** · **[Полный чертёж (`BLUEPRINT_RU.md`)](blueprint/BLUEPRINT_RU.md)** · **[Полный PDF (`BLUEPRINT_RU.pdf`)](blueprint/BLUEPRINT_RU.pdf)** · **[Указатель 240 записей ядра (`KERNEL_INDEX_RU.md`)](blueprint/KERNEL_INDEX_RU.md)** · **[Модуль `Lean 4` (`44` теоремы)](lean/HypercubeAndLPTheorems.lean)** · **[Стенд `Julia`](verification/verify_blueprint.jl)** · **[Сравнение 8 репозиториев](verification/COMPARISON_8_REPOS_RU.md)** · **[Журнал верификации](verification/AUDIT_HISTORY_RU.md)** · **[Промпт ИИ-ревизора](prompts/AI_REFEREE_PROMPT_RU.md)**
+**[English version (README.md)](README.md)** · **[Препринт на Hexagon (`2611.01031v1`)](https://hexagonmath.org/abs/2611.01031v1)** · **[PDF на Hexagon (`25` стр.)](https://hexagonmath.org/pdf/2611.01031v1)** · **[Доказательство на 1 странице PDF (`ONE_PAGE_PROOF_RU.pdf`)](blueprint/ONE_PAGE_PROOF_RU.pdf)** · **[На 1 странице (`ONE_PAGE_PROOF_RU.md`)](blueprint/ONE_PAGE_PROOF_RU.md)** · **[Полный чертёж (`BLUEPRINT_RU.md`)](blueprint/BLUEPRINT_RU.md)** · **[Полный PDF (`BLUEPRINT_RU.pdf`)](blueprint/BLUEPRINT_RU.pdf)** · **[Указатель 240 записей ядра (`KERNEL_INDEX_RU.md`)](blueprint/KERNEL_INDEX_RU.md)** · **[Модуль `Lean 4` (`44` теоремы)](lean/HypercubeAndLPTheorems.lean)** · **[Стенд `Julia`](verification/verify_blueprint.jl)** · **[Сравнение 8 репозиториев](verification/COMPARISON_8_REPOS_RU.md)** · **[Журнал верификации](verification/AUDIT_HISTORY_RU.md)** · **[Промпт ИИ-ревизора](prompts/AI_REFEREE_PROMPT_RU.md)**
 
 ---
 
@@ -176,6 +177,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 JULIA_LOAD_PATH=@stdlib \
 
 - **Автор математического чертежа, указателя ядра, автономного модуля `Lean 4` и верификационного кода:** Игорь Михайлович Жук · [ORCID `0009-0003-1670-8388`](https://orcid.org/0009-0003-1670-8388) · [GitHub `@Nondual-Observer`](https://github.com/Nondual-Observer).
 - **Коллаборация с ИИ:** Исходный формальный архив из `175 187` модулей создан Левентом Альпёге совместно с Claude (20 ноября 2026 года); настоящее математическое изложение, указатель из `240` записей ядра, модуль `Lean 4.33.1` из `44` теорем и стенд проверки на `Julia` подготовлены в коллаборации с системами ИИ (Gemini и OpenAI Codex), а все цитируемые объявления, формальные теоремы и конечные расчёты проверены компилятором и программными тестами.
+- **Препринт на Hexagon (`math.NT`, `math.AG`, `cs.LO`, классический LaTeX-чертёж, `25` стр.):** [`hexagon:2611.01031v1`](https://hexagonmath.org/abs/2611.01031v1) ([PDF](https://hexagonmath.org/pdf/2611.01031v1)).
 - **Препринт на Zenodo (редакция чертежа `9.0`, 4 PDF):** общий DOI всех редакций [`10.5281/zenodo.24459320`](https://doi.org/10.5281/zenodo.24459320) (актуальный выпуск `v9.0.1`: [`10.5281/zenodo.24459946`](https://doi.org/10.5281/zenodo.24459946)).
 - **Программный выпуск на Zenodo (`v1.0.0`):** [DOI `10.5281/zenodo.24459582`](https://doi.org/10.5281/zenodo.24459582).
 - Программный выпуск `1.0.0` сопровождает редакцию статьи `9.0`. Реквизиты для библиографических менеджеров приведены в файле [`CITATION.cff`](CITATION.cff). Код распространяется по лицензии [`Apache-2.0`](LICENSE), документация по лицензии [`CC BY 4.0`](LICENSE-DOCS.md).

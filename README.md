@@ -1,6 +1,7 @@
 # The Riemann Hypothesis in Lean 4
 
 [![Verify Blueprint & Lean 4](https://github.com/Nondual-Observer/riemann-lean4-blueprint/actions/workflows/verify.yml/badge.svg)](https://github.com/Nondual-Observer/riemann-lean4-blueprint/actions/workflows/verify.yml)
+[![Hexagon math.NT](https://img.shields.io/badge/Hexagon-2611.01031-2ea44f.svg)](https://hexagonmath.org/abs/2611.01031v1)
 [![Blueprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24459320.svg)](https://doi.org/10.5281/zenodo.24459320)
 [![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24459582.svg)](https://doi.org/10.5281/zenodo.24459582)
 [![Lean 4.33.1](https://img.shields.io/badge/Lean-4.33.1%20(0%20imports%2C%200%20sorry)-blue.svg)](lean/HypercubeAndLPTheorems.lean)
@@ -8,7 +9,7 @@
 [![Code License: Apache-2.0](https://img.shields.io/badge/Code-Apache--2.0-yellow.svg)](LICENSE)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/Docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-DOCS.md)
 
-**[Read in Russian](README_RU.md)** · [One-page PDF (`ONE_PAGE_PROOF_EN.pdf`)](blueprint/ONE_PAGE_PROOF_EN.pdf) · [Outline (`ONE_PAGE_PROOF_EN.md`)](blueprint/ONE_PAGE_PROOF_EN.md) · [Article (`BLUEPRINT_EN.md`)](blueprint/BLUEPRINT_EN.md) · [Article PDF (`BLUEPRINT_EN.pdf`)](blueprint/BLUEPRINT_EN.pdf) · [Kernel index (`KERNEL_INDEX_EN.md`)](blueprint/KERNEL_INDEX_EN.md) · [`Lean 4` module (`44` theorems)](lean/HypercubeAndLPTheorems.lean) · [`Julia` verifier](verification/verify_blueprint.jl) · [Eight expositions](verification/COMPARISON_8_REPOS_EN.md) · [Audit history](verification/AUDIT_HISTORY_EN.md) · [Referee instructions](prompts/AI_REFEREE_PROMPT_EN.md)
+**[Read in Russian](README_RU.md)** · [Hexagon preprint (`2611.01031v1`)](https://hexagonmath.org/abs/2611.01031v1) · [Hexagon PDF (`25` pp.)](https://hexagonmath.org/pdf/2611.01031v1) · [One-page PDF (`ONE_PAGE_PROOF_EN.pdf`)](blueprint/ONE_PAGE_PROOF_EN.pdf) · [Outline (`ONE_PAGE_PROOF_EN.md`)](blueprint/ONE_PAGE_PROOF_EN.md) · [Article (`BLUEPRINT_EN.md`)](blueprint/BLUEPRINT_EN.md) · [Article PDF (`BLUEPRINT_EN.pdf`)](blueprint/BLUEPRINT_EN.pdf) · [Kernel index (`KERNEL_INDEX_EN.md`)](blueprint/KERNEL_INDEX_EN.md) · [`Lean 4` module (`44` theorems)](lean/HypercubeAndLPTheorems.lean) · [`Julia` verifier](verification/verify_blueprint.jl) · [Eight expositions](verification/COMPARISON_8_REPOS_EN.md) · [Audit history](verification/AUDIT_HISTORY_EN.md) · [Referee instructions](prompts/AI_REFEREE_PROMPT_EN.md)
 
 ---
 
@@ -176,6 +177,7 @@ OPENBLAS_NUM_THREADS=1 JULIA_NUM_THREADS=1 JULIA_LOAD_PATH=@stdlib \
 
 - **Author of the mathematical blueprint, kernel index, standalone `Lean 4` module, and verification suite:** Igor M. Zhuk · [ORCID `0009-0003-1670-8388`](https://orcid.org/0009-0003-1670-8388) · [GitHub `@Nondual-Observer`](https://github.com/Nondual-Observer).
 - **AI Collaboration:** Whereas the `175,187`-module formal archive was created by Levent Alpöge with Claude (November 20, 2026), this mathematical exposition, the `240`-entry kernel index, the `44`-theorem `Lean 4.33.1` module, and the `Julia` verification suite were prepared in collaboration with AI systems (Gemini and OpenAI Codex), with all cited declarations, formal proofs, and finite calculations verified mechanically.
+- **Hexagon Preprint (`math.NT`, `math.AG`, `cs.LO`, 25-page classical LaTeX blueprint):** [`hexagon:2611.01031v1`](https://hexagonmath.org/abs/2611.01031v1) ([PDF](https://hexagonmath.org/pdf/2611.01031v1)).
 - **Zenodo Preprint (Blueprint Edition `9.0`, 4 PDFs):** Concept DOI [`10.5281/zenodo.24459320`](https://doi.org/10.5281/zenodo.24459320) (latest `v9.0.1`: [`10.5281/zenodo.24459946`](https://doi.org/10.5281/zenodo.24459946)).
 - **Zenodo Software Release (`v1.0.0`):** [DOI `10.5281/zenodo.24459582`](https://doi.org/10.5281/zenodo.24459582).
 - The software release is `1.0.0`. The blueprint edition is `9.0`. Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Code is licensed under [`Apache-2.0`](LICENSE); documentation and blueprint tables are licensed under [`CC BY 4.0`](LICENSE-DOCS.md).

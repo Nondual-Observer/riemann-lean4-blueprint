@@ -1,6 +1,6 @@
 # The Riemann Hypothesis: Mathematical Exposition and Kernel Blueprint of the Formal Proof
 
-**Edition 9.0 · November 23, 2026**
+**Edition 9.0 · November 23, 2026** · [Hexagon preprint 2611.01031v1](https://hexagonmath.org/abs/2611.01031v1) ([PDF](https://hexagonmath.org/pdf/2611.01031v1)) · [Zenodo DOI 10.5281/zenodo.24459320](https://doi.org/10.5281/zenodo.24459320)
 
 Alpöge and Claude prove the Riemann hypothesis for the zeta function and its analogue for every Dirichlet $L$-function. Every zero in the open critical strip has $\Re s = 1/2$. Their `Lean 4` archive contains `175,187` modules and `17,374,215` lines. This account follows the estimates that connect the five final statements. The one-page outline gives their order. [Outline (`ONE_PAGE_PROOF_EN.md`)](ONE_PAGE_PROOF_EN.md) · [Print (`ONE_PAGE_PROOF_EN.pdf`)](ONE_PAGE_PROOF_EN.pdf)
 
